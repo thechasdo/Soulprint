@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.gitignore
+*.zip
+*.md
+docs
+supabase/migrations
+README.md
+Dockerfile
+.dockerignore
+pnpm-lock.yaml

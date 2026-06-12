@@ -1,0 +1,612 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "brand": {
+    "name": {
+      "$type": "string",
+      "$value": "Soulprint"
+    },
+    "tagline": {
+      "$type": "string",
+      "$value": "Memories Live On"
+    },
+    "parentEndorsement": {
+      "$type": "string",
+      "$value": "Created by Chasdo Creative Worldwide LLC"
+    },
+    "productFeeling": {
+      "$type": "string",
+      "$value": "Warm, vivid, enduring, trustworthy, heartfelt, artistic, and alive."
+    },
+    "profileNaming": {
+      "primary": {
+        "$type": "string",
+        "$value": "Soulprint Profile"
+      },
+      "alternate": {
+        "$type": "string",
+        "$value": "Soulprint"
+      },
+      "plural": {
+        "$type": "string",
+        "$value": "Soulprint Profiles"
+      }
+    }
+  },
+  "color": {
+    "primitive": {
+      "soulprintNavy": {
+        "$type": "color",
+        "$value": "#062A63",
+        "$description": "Primary anchor for headlines, structure, outlines, and trust-building moments."
+      },
+      "cobaltBlue": {
+        "$type": "color",
+        "$value": "#0B63D1",
+        "$description": "Energetic digital accent for emphasis, links, active states, and UI depth."
+      },
+      "memoryTeal": {
+        "$type": "color",
+        "$value": "#22D7E8",
+        "$description": "Bright accent for optimism, motion, freshness, and memorable highlights."
+      },
+      "heartPink": {
+        "$type": "color",
+        "$value": "#FF4198",
+        "$description": "Warm emotional highlight for calls to action, love, and human moments."
+      },
+      "sunriseCoral": {
+        "$type": "color",
+        "$value": "#FF7A73",
+        "$description": "Warm storytelling accent for transitions, cards, memories, and gentle emphasis."
+      },
+      "goldenLight": {
+        "$type": "color",
+        "$value": "#FFC93D",
+        "$description": "Sparkle accent for celebration, joy, stars, badges, and premium moments."
+      },
+      "softIvory": {
+        "$type": "color",
+        "$value": "#FFF8F1",
+        "$description": "Primary light background to keep the product warm, bright, and refined."
+      },
+      "white": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Clean elevated surfaces and card interiors."
+      },
+      "ink": {
+        "$type": "color",
+        "$value": "#031A3F",
+        "$description": "Deep readable text on light backgrounds."
+      },
+      "mutedInk": {
+        "$type": "color",
+        "$value": "#516179",
+        "$description": "Secondary text for helper copy and muted labels."
+      },
+      "line": {
+        "$type": "color",
+        "$value": "#D7EEF2",
+        "$description": "Soft border color that supports clarity without feeling cold."
+      },
+      "success": {
+        "$type": "color",
+        "$value": "#14B8A6",
+        "$description": "Positive confirmation and secure states."
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "#FFC93D",
+        "$description": "Gentle warning and attention states."
+      },
+      "danger": {
+        "$type": "color",
+        "$value": "#FF4198",
+        "$description": "Use sparingly for destructive or urgent actions, softened by the brand palette."
+      }
+    },
+    "semantic": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.primitive.softIvory}"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{color.primitive.white}"
+      },
+      "surfaceWarm": {
+        "$type": "color",
+        "$value": "#FFF2E7"
+      },
+      "surfaceCool": {
+        "$type": "color",
+        "$value": "#EFFFFD"
+      },
+      "textPrimary": {
+        "$type": "color",
+        "$value": "{color.primitive.ink}"
+      },
+      "textBrand": {
+        "$type": "color",
+        "$value": "{color.primitive.soulprintNavy}"
+      },
+      "textMuted": {
+        "$type": "color",
+        "$value": "{color.primitive.mutedInk}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.primitive.line}"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{color.primitive.memoryTeal}"
+      },
+      "cta": {
+        "$type": "color",
+        "$value": "{color.primitive.heartPink}"
+      },
+      "ctaHover": {
+        "$type": "color",
+        "$value": "#E82F83"
+      },
+      "accentJoy": {
+        "$type": "color",
+        "$value": "{color.primitive.goldenLight}"
+      },
+      "accentStory": {
+        "$type": "color",
+        "$value": "{color.primitive.sunriseCoral}"
+      },
+      "accentDigital": {
+        "$type": "color",
+        "$value": "{color.primitive.cobaltBlue}"
+      },
+      "accentFresh": {
+        "$type": "color",
+        "$value": "{color.primitive.memoryTeal}"
+      },
+      "trust": {
+        "$type": "color",
+        "$value": "{color.primitive.soulprintNavy}"
+      }
+    }
+  },
+  "gradient": {
+    "memoryRibbon": {
+      "$type": "gradient",
+      "$value": "linear-gradient(90deg, #FF4198 0%, #FF7A73 28%, #FFC93D 52%, #22D7E8 76%, #0B63D1 100%)"
+    },
+    "sunriseMemory": {
+      "$type": "gradient",
+      "$value": "linear-gradient(135deg, #FF4198 0%, #FF7A73 38%, #FFC93D 100%)"
+    },
+    "tealBlueGlow": {
+      "$type": "gradient",
+      "$value": "linear-gradient(135deg, #22D7E8 0%, #0B63D1 100%)"
+    },
+    "ivoryAurora": {
+      "$type": "gradient",
+      "$value": "radial-gradient(circle at top left, rgba(255,65,152,.18), transparent 30%), radial-gradient(circle at top right, rgba(34,215,232,.22), transparent 35%), #FFF8F1"
+    },
+    "nightMemory": {
+      "$type": "gradient",
+      "$value": "linear-gradient(135deg, #031A3F 0%, #062A63 45%, #0B63D1 100%)"
+    }
+  },
+  "font": {
+    "family": {
+      "signatureDisplay": {
+        "$type": "fontFamily",
+        "$value": [
+          "Cormorant Garamond",
+          "Georgia",
+          "serif"
+        ]
+      },
+      "editorialStory": {
+        "$type": "fontFamily",
+        "$value": [
+          "Fraunces",
+          "Georgia",
+          "serif"
+        ]
+      },
+      "humanSans": {
+        "$type": "fontFamily",
+        "$value": [
+          "Plus Jakarta Sans",
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ]
+      },
+      "soulNoteScript": {
+        "$type": "fontFamily",
+        "$value": [
+          "Caveat",
+          "Allura",
+          "cursive"
+        ]
+      }
+    },
+    "weight": {
+      "regular": {
+        "$type": "fontWeight",
+        "$value": "400"
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": "500"
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": "600"
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": "700"
+      }
+    },
+    "size": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "0.75rem"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "0.875rem"
+      },
+      "base": {
+        "$type": "dimension",
+        "$value": "1rem"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "1.125rem"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "1.25rem"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "1.5rem"
+      },
+      "3xl": {
+        "$type": "dimension",
+        "$value": "1.875rem"
+      },
+      "4xl": {
+        "$type": "dimension",
+        "$value": "2.25rem"
+      },
+      "5xl": {
+        "$type": "dimension",
+        "$value": "3rem"
+      },
+      "hero": {
+        "$type": "dimension",
+        "$value": "clamp(3rem, 8vw, 6.5rem)"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "$type": "number",
+        "$value": "1.05"
+      },
+      "display": {
+        "$type": "number",
+        "$value": "1.1"
+      },
+      "heading": {
+        "$type": "number",
+        "$value": "1.2"
+      },
+      "body": {
+        "$type": "number",
+        "$value": "1.65"
+      }
+    },
+    "letterSpacing": {
+      "wide": {
+        "$type": "dimension",
+        "$value": "0.08em"
+      },
+      "button": {
+        "$type": "dimension",
+        "$value": "0.03em"
+      }
+    }
+  },
+  "typography": {
+    "hero": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.signatureDisplay}",
+        "fontWeight": "{font.weight.bold}",
+        "fontSize": "{font.size.hero}",
+        "lineHeight": "{font.lineHeight.tight}",
+        "letterSpacing": "-0.03em"
+      }
+    },
+    "sectionTitle": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.signatureDisplay}",
+        "fontWeight": "{font.weight.bold}",
+        "fontSize": "{font.size.5xl}",
+        "lineHeight": "{font.lineHeight.display}",
+        "letterSpacing": "-0.02em"
+      }
+    },
+    "storyQuote": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.editorialStory}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": "{font.size.xl}",
+        "lineHeight": "{font.lineHeight.body}",
+        "fontStyle": "italic"
+      }
+    },
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.humanSans}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": "{font.size.base}",
+        "lineHeight": "{font.lineHeight.body}"
+      }
+    },
+    "label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.humanSans}",
+        "fontWeight": "{font.weight.semibold}",
+        "fontSize": "{font.size.sm}",
+        "lineHeight": "1.3",
+        "letterSpacing": "{font.letterSpacing.wide}",
+        "textTransform": "uppercase"
+      }
+    },
+    "scriptAccent": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.soulNoteScript}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": "{font.size.3xl}",
+        "lineHeight": "1.2"
+      }
+    }
+  },
+  "space": {
+    "0": {
+      "$type": "dimension",
+      "$value": "0.0rem"
+    },
+    "1": {
+      "$type": "dimension",
+      "$value": "0.25rem"
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": "0.5rem"
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": "0.75rem"
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": "1.0rem"
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": "1.25rem"
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "1.5rem"
+    },
+    "7": {
+      "$type": "dimension",
+      "$value": "1.75rem"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "2.0rem"
+    },
+    "9": {
+      "$type": "dimension",
+      "$value": "2.25rem"
+    },
+    "10": {
+      "$type": "dimension",
+      "$value": "2.5rem"
+    },
+    "11": {
+      "$type": "dimension",
+      "$value": "2.75rem"
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "3.0rem"
+    },
+    "13": {
+      "$type": "dimension",
+      "$value": "3.25rem"
+    },
+    "14": {
+      "$type": "dimension",
+      "$value": "3.5rem"
+    },
+    "15": {
+      "$type": "dimension",
+      "$value": "3.75rem"
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "4.0rem"
+    },
+    "17": {
+      "$type": "dimension",
+      "$value": "4.25rem"
+    },
+    "18": {
+      "$type": "dimension",
+      "$value": "4.5rem"
+    },
+    "19": {
+      "$type": "dimension",
+      "$value": "4.75rem"
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": "5.0rem"
+    },
+    "21": {
+      "$type": "dimension",
+      "$value": "5.25rem"
+    },
+    "22": {
+      "$type": "dimension",
+      "$value": "5.5rem"
+    },
+    "23": {
+      "$type": "dimension",
+      "$value": "5.75rem"
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": "6.0rem"
+    }
+  },
+  "radius": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "0.5rem"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "0.875rem"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "1.25rem"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "1.75rem"
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "2.25rem"
+    },
+    "pill": {
+      "$type": "dimension",
+      "$value": "999px"
+    }
+  },
+  "shadow": {
+    "soft": {
+      "$type": "shadow",
+      "$value": "0 12px 30px rgba(6, 42, 99, 0.10)"
+    },
+    "card": {
+      "$type": "shadow",
+      "$value": "0 18px 55px rgba(6, 42, 99, 0.12)"
+    },
+    "glowPink": {
+      "$type": "shadow",
+      "$value": "0 0 0 1px rgba(255,65,152,.20), 0 20px 60px rgba(255,65,152,.22)"
+    },
+    "glowTeal": {
+      "$type": "shadow",
+      "$value": "0 0 0 1px rgba(34,215,232,.22), 0 20px 60px rgba(34,215,232,.25)"
+    },
+    "focusRing": {
+      "$type": "shadow",
+      "$value": "0 0 0 4px rgba(34, 215, 232, 0.35)"
+    }
+  },
+  "border": {
+    "thin": {
+      "$type": "dimension",
+      "$value": "1px"
+    },
+    "medium": {
+      "$type": "dimension",
+      "$value": "2px"
+    },
+    "glow": {
+      "$type": "string",
+      "$value": "1px solid rgba(34,215,232,.35)"
+    }
+  },
+  "motion": {
+    "fast": {
+      "$type": "duration",
+      "$value": "150ms"
+    },
+    "base": {
+      "$type": "duration",
+      "$value": "240ms"
+    },
+    "slow": {
+      "$type": "duration",
+      "$value": "420ms"
+    },
+    "easeOut": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(.16, 1, .3, 1)"
+    },
+    "easeInOut": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(.65, 0, .35, 1)"
+    }
+  },
+  "component": {
+    "buttonPrimary": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.semantic.cta}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "hoverBackground": {
+        "$type": "color",
+        "$value": "{color.semantic.ctaHover}"
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{radius.pill}"
+      },
+      "shadow": {
+        "$type": "shadow",
+        "$value": "{shadow.glowPink}"
+      }
+    },
+    "soulProfileCard": {
+      "background": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.78)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "rgba(34,215,232,.35)"
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{radius.2xl}"
+      },
+      "shadow": {
+        "$type": "shadow",
+        "$value": "{shadow.card}"
+      }
+    }
+  }
+}

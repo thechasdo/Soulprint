@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "../src/styles/soulprint.tokens.css";
+@import "../src/styles/soulprint.components.css";
+
+:root {
+  --navy: #102a43;
+  --seafoam: #58c7d9;
+  --sunset: #ff6f91;
+  --orange: #ff9a4d;
+  --cream: #fff9f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--navy);
+  background:
+    radial-gradient(circle at top left, rgba(88, 199, 217, 0.20), transparent 30rem),
+    radial-gradient(circle at top right, rgba(255, 111, 145, 0.18), transparent 28rem),
+    linear-gradient(180deg, #ffffff 0%, #fff9f0 100%);
+  position: relative;
+}
+
+/* Subtle luxury noise/grain texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.015; /* Extremely subtle grain */
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* High-end physical physics & spring easings */
+.physics-spring {
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.physics-spring:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 90px rgba(16, 42, 67, 0.12);
+}
+
+.physics-scale {
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.physics-scale:active {
+  transform: scale(0.96);
+}
+
+.brand-card {
+  border: 1px solid rgba(16, 42, 67, 0.10);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 80px rgba(16, 42, 67, 0.08);
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #58c7d9 0%, #ff6f91 55%, #ff9a4d 100%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}

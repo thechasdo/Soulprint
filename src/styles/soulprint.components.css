@@ -1,0 +1,109 @@
+/* Soulprint Component Utilities
+   Optional starter classes using the token layer.
+*/
+
+.sp-page {
+  min-height: 100vh;
+  background: var(--sp-gradient-ivory-aurora);
+  color: var(--sp-text);
+}
+
+.sp-eyebrow {
+  font-family: var(--sp-font-sans);
+  font-size: var(--sp-text-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sp-color-teal);
+}
+
+.sp-hero-title {
+  font-family: var(--sp-font-display);
+  font-size: var(--sp-text-hero);
+  line-height: var(--sp-leading-tight);
+  letter-spacing: -0.03em;
+  color: var(--sp-color-navy);
+}
+
+.sp-gradient-text {
+  background: var(--sp-gradient-memory-ribbon);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sp-story-copy {
+  font-family: var(--sp-font-story);
+  font-size: var(--sp-text-xl);
+  line-height: var(--sp-leading-body);
+  color: var(--sp-color-navy);
+}
+
+.sp-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(34, 215, 232, 0.35);
+  border-radius: var(--sp-radius-2xl);
+  box-shadow: var(--sp-shadow-card);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  backdrop-filter: blur(18px);
+}
+
+.sp-soulprint-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,248,241,.88));
+  border: 1px solid rgba(255,65,152,.22);
+  border-radius: var(--sp-radius-2xl);
+  box-shadow: var(--sp-shadow-card);
+}
+
+.sp-soulprint-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5px;
+  background: var(--sp-gradient-memory-ribbon);
+}
+
+.sp-button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  border-radius: var(--sp-radius-pill);
+  background: var(--sp-color-pink);
+  color: white;
+  box-shadow: var(--sp-shadow-glow-pink);
+  font-family: var(--sp-font-sans);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.9rem 1.35rem;
+  transition: transform var(--sp-motion-base) var(--sp-ease-out), background var(--sp-motion-base) var(--sp-ease-out), box-shadow var(--sp-motion-base) var(--sp-ease-out);
+}
+
+.sp-button-primary:hover {
+  background: var(--sp-cta-hover);
+  transform: translateY(-2px);
+}
+
+.sp-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(34,215,232,.45);
+  border-radius: var(--sp-radius-pill);
+  background: rgba(255,255,255,.72);
+  color: var(--sp-color-navy);
+  font-family: var(--sp-font-sans);
+  font-weight: 700;
+  padding: 0.9rem 1.35rem;
+}
+
+.sp-parent-endorsement {
+  font-family: var(--sp-font-sans);
+  font-size: var(--sp-text-xs);
+  color: var(--sp-text-muted);
+  letter-spacing: 0.04em;
+}
