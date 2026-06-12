@@ -14,7 +14,7 @@ It is designed to preserve:
 - family history
 - future estate-vault records
 
-This package uses the uploaded Soulprint logo as the core brand asset and places it across the marketing site, auth pages, dashboard, metadata, and memorial pages.
+This package uses the uploaded Soulprint logo as the core brand asset and places it across the marketing site, auth pages, dashboard, metadata, and Soulprint pages.
 
 ## Stack
 
@@ -35,11 +35,25 @@ Yearly plans save 20%.
 
 ## Setup
 
+Use Node.js 20.9 or newer. Node 22 LTS is a good choice.
+
 ```bash
-npm install
+npm ci
 cp .env.example .env.local
+npm run typecheck
+npm run lint
 npm run dev
 ```
+
+Before running a production build, fill in at least these values in `.env.local`:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+For Stripe checkout, signed uploads, and Supabase Edge Functions, also fill in the server-only values in `.env.local` and in your Supabase function secrets. Never commit `.env.local`.
 
 ## Supabase
 

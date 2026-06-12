@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../styles/soulprint.tokens.css";
+@import "../styles/soulprint.components.css";
